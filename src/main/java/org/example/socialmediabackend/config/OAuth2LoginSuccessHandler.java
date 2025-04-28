@@ -38,7 +38,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
 
             // Frontend-ə yönləndir və token-i parametr kimi ötür
             // Bu URL-i öz frontend URL-nizlə əvəz edin
-            String redirectUrl = "http://localhost:3000/oauth2/redirect?token=" + token;
+            String redirectUrl = "http://localhost:63342/oauth2/redirect?token=" + token;
             getRedirectStrategy().sendRedirect(request, response, redirectUrl);
         } else {
             // İstifadəçi tapılmadı, xəta
