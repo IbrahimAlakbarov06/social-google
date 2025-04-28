@@ -43,6 +43,12 @@ public class User implements UserDetails {
     @Column(name = "reset_code")
     private String resetCode;
 
+    @Column(name = "oauth_provider")
+    private String provider; // "google", "facebook" və s.
+
+    @Column(name = "oauth_provider_id")
+    private String providerId;
+
     @Column(name = "reset_code_expiration")
     private LocalDateTime resetCodeExpiresAt;
 
